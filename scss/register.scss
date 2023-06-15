@@ -1,3 +1,12 @@
+ul,
+li {
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration-line: none;
+}
+
 .form-label {
     font-weight: bold;
 }
@@ -76,9 +85,37 @@
 }
 
 footer {
-    background-color: #ececec;
+    .accordion {
+        background-color: transparent;
 
-    .collapse {
+        .accordion-item {
+            .accordion-header {
+                width: 100%;
+                background-color: #ececec;
+                position: relative;
+
+                .accordion-button {
+                    width: max-content;
+                    background-color: transparent;
+                    box-shadow: none;
+                    position: absolute;
+                    top: 0rem;
+                    right: 1rem;
+
+                    // &::after {
+                    //     transform: rotate(180deg);
+                    // }
+
+                    // &:not(.collapsed)::after {
+                    //     transform: rotate(0);
+                    // }
+                }
+            }
+        }
+    }
+
+    .accordion-body {
+        padding: 2rem 0;
         background-color: #fafafa;
     }
 }

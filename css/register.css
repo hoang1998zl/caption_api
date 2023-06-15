@@ -1,3 +1,13 @@
+ul,
+li {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+a {
+  text-decoration-line: none;
+}
+
 .form-label {
   font-weight: bold;
 }
@@ -59,9 +69,24 @@
   font-weight: bold;
 }
 
-footer {
-  background-color: #ececec;
+footer .accordion {
+  background-color: transparent;
 }
-footer .collapse {
+footer .accordion .accordion-item .accordion-header {
+  width: 100%;
+  background-color: #ececec;
+  position: relative;
+}
+footer .accordion .accordion-item .accordion-header .accordion-button {
+  width: -moz-max-content;
+  width: max-content;
+  background-color: transparent;
+  box-shadow: none;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+}
+footer .accordion-body {
+  padding: 2rem 0;
   background-color: #fafafa;
 }

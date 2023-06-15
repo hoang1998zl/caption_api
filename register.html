@@ -26,60 +26,58 @@
 
 <body>
     <header>
-        <div class="container-lg">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <img src="./img/logo.png" alt="" />
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/product.html?1">Shop</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Blog
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Shop</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Product</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">New Post</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder aria-label="Search" />
-                            <button class="btn btn-outline-danger" type="submit">
-                                Search
-                            </button>
-                        </form>
-                    </div>
+        <nav class="navbar navbar-expand-lg bg-secondary">
+            <div class="container">
+                <img src="./img/logo.png" alt="" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/product.html?1">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Product</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Post</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder aria-label="Search" />
+                        <button class="btn btn-outline-danger" type="submit">
+                            Search
+                        </button>
+                    </form>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="pb-5 my-5">
         <section class="register">
             <div class="container">
                 <form action="" method="POST" class="form" id="form-1">
@@ -148,30 +146,14 @@
     </main>
     <footer>
         <!-- place footer here -->
-        <div class="collapse" id="contentId">
-        </div>
-        <div class="footer_bg">
-            <p>
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#contentId" aria-expanded="false"
-                    aria-controls="contentId">
-                    Show more
-                </a>
-            </p>
-        </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                        
-                    </button>
-                </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <div class="container">
                             <div class="row">
-                                <div class="col-12 col-md-4 border-end">
+                                <div class="col-12 col-md-3 col-lg-4 border-end">
                                     <div class="footer_content w-100">
                                         <h4 class="title fw-bold text-uppercase">
                                             Get help
@@ -200,7 +182,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 border-end">
+                                <div class="col-12 col-md-3 col-lg-4 border-end">
                                     <div class="footer_content w-100">
                                         <h4 class="title fw-bold text-uppercase">
                                             order
@@ -224,7 +206,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-6 col-lg-4 pe-md-5">
                                     <div class="footer_content w-100">
                                         <h4 class="title fw-bold text-uppercase">
                                             register
@@ -242,6 +224,86 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="accordion-header" id="flush-headingOne">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-3 col-lg-4 border-end">
+                                <div class="footer_content w-100">
+                                    <h4 class="title fw-bold text-uppercase">
+                                        Get help
+                                    </h4>
+                                    <ul type="none">
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Shopping
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-black">
+                                                NIKEid
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Nike+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-4 border-end">
+                                <div class="footer_content w-100">
+                                    <h4 class="title fw-bold text-uppercase">
+                                        order
+                                    </h4>
+                                    <ul type="none">
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Payment options
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Shipping and delivery
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="text-black">
+                                                Returns
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 pe-md-5">
+                                <div class="footer_content w-100">
+                                    <h4 class="title fw-bold text-uppercase">
+                                        register
+                                    </h4>
+                                    <p class="mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+                                        necessitatibus
+                                        iure
+                                    </p>
+                                    <a href="" class="text-danger">
+                                        Learn more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+
+                    </button>
                 </div>
             </div>
         </div>
