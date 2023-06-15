@@ -36,7 +36,8 @@ function postUser() {
         data: users,
     });
     promise.then(function (result) {
-        console.log(result);
+        console.log(`thành công + ${result}`);
+        alert(`Đăng ký thành công`);
     }).catch(function (error) {
         console.log("Thất bại" + error);
     });

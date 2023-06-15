@@ -21,12 +21,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <!-- link css  -->
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/register.css" />
 </head>
 
 <body>
-    <header>
+    <header class="w-100 position-sticky top-0">
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container">
                 <img src="./img/logo.png" alt="" />
@@ -38,10 +37,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/product.html?1">Shop</a>
+                            <a class="nav-link" href="./product.html?1">Shop</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -69,8 +68,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder aria-label="Search" />
-                        <button class="btn btn-outline-danger" type="submit">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search" />
+                        <button class="btn" type="submit">
                             Search
                         </button>
                     </form>
@@ -120,7 +119,7 @@
                                 <span class="form-message"></span>
                             </div>
                             <div class="form-radio d-flex">
-                                <label class="form-check-label text-black text-start me-3">
+                                <label class="form-check-label text-black text-start me-3 fw-bold">
                                     Gender
                                 </label>
                                 <div class="form-check">
@@ -144,6 +143,7 @@
                 </form>
             </div>
         </section>
+        <div id="showdiv"></div>
     </main>
     <footer>
         <!-- place footer here -->
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-header" id="flush-headingOne">
+                <div class="accordion-header py-5" id="flush-headingOne">
 
                     <div class="container">
                         <div class="row">
@@ -303,7 +303,6 @@
 
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-
                     </button>
                 </div>
             </div>

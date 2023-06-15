@@ -8,14 +8,13 @@ a {
   text-decoration-line: none;
 }
 
-.form-label {
+main .form-label {
   font-weight: bold;
 }
-
-.form-group {
+main .form-group {
   margin-bottom: 1rem;
 }
-.form-group .form-control {
+main .form-group .form-control {
   border: none;
   border-radius: 0;
   border-bottom: 0.3rem #ae18e2 solid;
@@ -23,50 +22,71 @@ a {
   padding-left: 0;
   padding-right: 0;
 }
-.form-group .form-control:focus {
+main .form-group .form-control:focus {
   outline: none;
   box-shadow: none;
 }
-.form-group .form-control::-moz-placeholder {
+main .form-group .form-control::-moz-placeholder {
   color: black;
   opacity: 1;
   font-weight: bold;
 }
-.form-group .form-control::placeholder {
+main .form-group .form-control::placeholder {
   color: black;
   opacity: 1;
   font-weight: bold;
 }
-
-.form-control:focus ~ .form-label {
+main .form-control:focus ~ .form-label {
   transform: translateY(0);
 }
-
-.form-radio {
+main .form-radio {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.form-radio .form-check {
+main .form-radio .form-check {
   display: flex;
   align-items: center;
   margin-right: 2rem;
 }
-.form-radio .form-check-input {
+main .form-radio .form-check-input {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
 }
-.form-radio .form-check-label {
+main .form-radio .form-check-label {
   margin-top: 0.3rem;
 }
-
-.form-submit {
+main .form-submit {
   padding: 0.5rem 3rem;
   background-color: #ae18e2;
   color: #fff;
   border: none;
   border-radius: 0.25rem;
   font-weight: bold;
+}
+
+header .navbar {
+  height: 90px;
+}
+header .navbar img {
+  height: 75px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+  color: #fff;
+}
+header .navbar .navbar-nav .nav-item .dropdown-item {
+  font-weight: bold;
+}
+header .navbar form button[type=submit] {
+  width: 120px;
+  border-color: #fff;
+  color: #fff;
+}
+header .navbar form button[type=submit]:hover {
+  font-weight: bold;
+  border-color: #fff;
+  color: #fff;
 }
 
 footer .accordion {
@@ -83,7 +103,7 @@ footer .accordion .accordion-item .accordion-header .accordion-button {
   background-color: transparent;
   box-shadow: none;
   position: absolute;
-  top: 0rem;
+  top: 1.5rem;
   right: 1rem;
 }
 footer .accordion-body {

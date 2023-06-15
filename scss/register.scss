@@ -7,81 +7,120 @@ a {
     text-decoration-line: none;
 }
 
-.form-label {
-    font-weight: bold;
-}
+main {
+    .form-label {
+        font-weight: bold;
+    }
 
-.form-group {
-    margin-bottom: 1rem;
+    .form-group {
+        margin-bottom: 1rem;
 
-    // .form-label {
-    //     transform: translateY(100%);
-    //     margin-bottom: 0;
-    //     transition: all 0.3s ease;
-    // }
+        // .form-label {
+        //     transform: translateY(100%);
+        //     margin-bottom: 0;
+        //     transition: all 0.3s ease;
+        // }
 
-    .form-control {
-        border: none;
-        border-radius: 0;
-        border-bottom: 0.3rem #ae18e2 solid;
-        outline: none;
-        padding-left: 0;
-        padding-right: 0;
-
-        &:focus {
+        .form-control {
+            border: none;
+            border-radius: 0;
+            border-bottom: 0.3rem #ae18e2 solid;
             outline: none;
-            box-shadow: none;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: black;
+                opacity: 1;
+                font-weight: bold;
+            }
         }
 
-        &::placeholder {
-            color: black;
-            opacity: 1;
-            font-weight: bold;
+        // &:focus-within {
+        //     outline: none;
+        //     box-shadow: none;
+
+        //     .form-label {
+        //         transform: translateY(0);
+        //     }
+        // }
+    }
+
+    .form-control:focus~.form-label {
+        transform: translateY(0);
+    }
+
+    .form-radio {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+
+            &-input {
+                width: 20px;
+                height: 20px;
+                margin-right: 1rem;
+            }
+
+            &-label {
+                margin-top: 0.3rem;
+            }
         }
     }
 
-    // &:focus-within {
-    //     outline: none;
-    //     box-shadow: none;
-
-    //     .form-label {
-    //         transform: translateY(0);
-    //     }
-    // }
-}
-
-.form-control:focus~.form-label {
-    transform: translateY(0);
-}
-
-.form-radio {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    .form-check {
-        display: flex;
-        align-items: center;
-        margin-right: 2rem;
-
-        &-input {
-            width: 20px;
-            height: 20px;
-            margin-right: 1rem;
-        }
-
-        &-label {
-            margin-top: 0.3rem;
-        }
+    .form-submit {
+        padding: 0.5rem 3rem;
+        background-color: #ae18e2;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        font-weight: bold;
     }
 }
 
-.form-submit {
-    padding: 0.5rem 3rem;
-    background-color: #ae18e2;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
-    font-weight: bold;
+header {
+    .navbar {
+        height: 90px;
+
+        img {
+            height: 75px;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                .dropdown-item {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        form {
+            button[type="submit"] {
+                width: 120px;
+                border-color: #fff;
+                color: #fff;
+
+                &:hover {
+                    font-weight: bold;
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -99,7 +138,7 @@ footer {
                     background-color: transparent;
                     box-shadow: none;
                     position: absolute;
-                    top: 0rem;
+                    top: 1.5rem;
                     right: 1rem;
 
                     // &::after {
